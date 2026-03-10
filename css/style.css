@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 80px;
+}
+
+.header__logo {
+  width: 70px;
+}
+
+.header__menu {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+    font-size: 28px;
+  }
+}
+
+.portada {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portada__img {
+  width: 435px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .portada {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .portada__img {
+    width: 318px;
+    height: 300px;
+  }
+}
+
+.quiensoy {
+  background-color: #141414;
+}
+
+.quiensoy__total {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 20px;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.quiensoy__img {
+  width: 200px;
+  height: 211px;
+}
+
+.quiensoy__titulo {
+  margin-bottom: 16px;
+}
+
+.quiensoy__contenido {
+  align-content: center;
+  color: #fafafa;
+  width: 522px;
+}
+
+@media (max-width: 768px) {
+  .quiensoy__total {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .quiensoy__contenido {
+    width: 312px;
+  }
+
+  .quiensoy__img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.servicios {
+  margin-top: 50px;
+}
+
+.servicios__titulo {
+  text-align: center;
+}
+
+.servicios__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.card {
+  width: 275px;
+  height: 330px;
+  text-align: center;
+}
+
+.card__img {
+  width: 130px;
+  height: 138px;
+}
+
+.card__titulo {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .servicios__items {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card {
+    margin-top: 40px;
+  }
+}
+
+.escribime {
+  background-color: #141414;
+  color: #fafafa;
+  margin-top: 50px;
+}
+
+.escribime__total {
+  display: flex;
+  justify-content: space-evenly;
+  width: 700px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px 0;
+}
+
+.form__input,
+.form__textarea {
+  width: 350px;
+  padding: 10px;
+}
+
+.form__textarea {
+  height: 120px;
+}
+
+.form__button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ffd953;
+  border: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .escribime__total {
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .escribime__title {
+    text-align: center;
+  }
+
+  .form__input,
+  .form__textarea {
+    width: 100%;
+  }
+
+  .form__button {
+    margin: 50px 0;
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #c0c0c0;
+  background-image: radial-gradient(#9e9e9e 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position:
+    0 0,
+    10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 98px 80px;
+}
+
+.footer__contenido {
+  text-align: center;
+}
+
+.footer__logo {
+  width: 100px;
+  height: 90px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px 0;
+  padding: 20px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__link i {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: start;
+    padding: 70px 16px;
+  }
+
+  .footer__contenido {
+    text-align: start;
+  }
+
+  .footer__logo {
+    width: 77px;
+    height: 77px;
+  }
+
+  .footer__marca {
+    margin-top: 10px;
+  }
+
+  .footer__nav {
+    padding: 0;
+    margin-top: 50px;
+  }
+}
